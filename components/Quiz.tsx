@@ -62,19 +62,19 @@ export default function Quiz() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-4">
             Find Your Perfect Plan
           </h2>
-          <p className="text-lg text-stone-600">
+          <p className="text-lg text-slate-600">
             Take this 30-second quiz to discover which customized diet strategy is scientifically best for your body.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100 overflow-hidden relative min-h-[400px] flex flex-col">
+        <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden relative min-h-[400px] flex flex-col">
           
           {/* Progress Bar */}
           {step <= 3 && (
-            <div className="w-full h-1.5 bg-stone-100">
+            <div className="w-full h-1.5 bg-slate-100">
               <motion.div 
                 className="h-full bg-brand-500"
                 initial={{ width: 0 }}
@@ -96,16 +96,16 @@ export default function Quiz() {
                   exit={{ opacity: 0, x: -20 }}
                   className="w-full"
                 >
-                  <h3 className="text-2xl font-bold text-stone-900 mb-8 text-center font-serif">What is your primary health goal?</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center font-serif">What is your primary health goal?</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {GOALS.map((goal) => (
                       <button
                         key={goal}
                         onClick={() => handleNext("goal", goal)}
-                        className="p-4 rounded-xl border-2 border-stone-100 hover:border-brand-500 hover:bg-brand-50 text-stone-700 font-semibold transition-all text-left flex justify-between items-center group"
+                        className="p-4 rounded-xl border-2 border-slate-100 hover:border-brand-500 hover:bg-brand-50 text-slate-700 font-semibold transition-all text-left flex justify-between items-center group"
                       >
                         {goal}
-                        <ChevronRight className="w-5 h-5 text-stone-300 group-hover:text-brand-500 transition-colors" />
+                        <ChevronRight className="w-5 h-5 text-slate-300 group-hover:text-brand-500 transition-colors" />
                       </button>
                     ))}
                   </div>
@@ -121,16 +121,16 @@ export default function Quiz() {
                   exit={{ opacity: 0, x: -20 }}
                   className="w-full"
                 >
-                  <h3 className="text-2xl font-bold text-stone-900 mb-8 text-center font-serif">Do you have any of these conditions?</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center font-serif">Do you have any of these conditions?</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {CONDITIONS.map((condition) => (
                       <button
                         key={condition}
                         onClick={() => handleNext("condition", condition)}
-                        className="p-4 rounded-xl border-2 border-stone-100 hover:border-brand-500 hover:bg-brand-50 text-stone-700 font-semibold transition-all text-left flex justify-between items-center group"
+                        className="p-4 rounded-xl border-2 border-slate-100 hover:border-brand-500 hover:bg-brand-50 text-slate-700 font-semibold transition-all text-left flex justify-between items-center group"
                       >
                         {condition}
-                        <ChevronRight className="w-5 h-5 text-stone-300 group-hover:text-brand-500 transition-colors" />
+                        <ChevronRight className="w-5 h-5 text-slate-300 group-hover:text-brand-500 transition-colors" />
                       </button>
                     ))}
                   </div>
@@ -146,16 +146,16 @@ export default function Quiz() {
                   exit={{ opacity: 0, x: -20 }}
                   className="w-full"
                 >
-                  <h3 className="text-2xl font-bold text-stone-900 mb-8 text-center font-serif">What is your dietary preference?</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center font-serif">What is your dietary preference?</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {DIETS.map((diet) => (
                       <button
                         key={diet}
                         onClick={() => handleNext("diet", diet)}
-                        className="p-4 rounded-xl border-2 border-stone-100 hover:border-brand-500 hover:bg-brand-50 text-stone-700 font-semibold transition-all text-left flex justify-between items-center group"
+                        className="p-4 rounded-xl border-2 border-slate-100 hover:border-brand-500 hover:bg-brand-50 text-slate-700 font-semibold transition-all text-left flex justify-between items-center group"
                       >
                         {diet}
-                        <ChevronRight className="w-5 h-5 text-stone-300 group-hover:text-brand-500 transition-colors" />
+                        <ChevronRight className="w-5 h-5 text-slate-300 group-hover:text-brand-500 transition-colors" />
                       </button>
                     ))}
                   </div>
@@ -179,8 +179,8 @@ export default function Quiz() {
                         </svg>
                         <Sparkles className="absolute inset-0 m-auto text-brand-500 animate-pulse w-6 h-6" />
                       </div>
-                      <h3 className="text-2xl font-bold text-stone-800 font-serif">Analyzing your profile...</h3>
-                      <p className="text-stone-500">Finding the perfect nutritional strategy based on your answers.</p>
+                      <h3 className="text-2xl font-bold text-slate-800 font-serif">Analyzing your profile...</h3>
+                      <p className="text-slate-500">Finding the perfect nutritional strategy based on your answers.</p>
                     </div>
                   ) : (
                     <div className="flex flex-col items-center justify-center">
@@ -188,10 +188,10 @@ export default function Quiz() {
                         <Sparkles className="w-8 h-8" />
                       </div>
                       <p className="text-sm font-semibold text-brand-500 uppercase tracking-widest mb-2">Perfect Match Found</p>
-                      <h3 className="text-3xl font-bold text-stone-900 mb-4 font-serif">
+                      <h3 className="text-3xl font-bold text-slate-900 mb-4 font-serif">
                         {getRecommendedPlan()}
                       </h3>
-                      <p className="text-stone-600 mb-8 max-w-md mx-auto">
+                      <p className="text-slate-600 mb-8 max-w-md mx-auto">
                         Based on your goal to {answers.goal.toLowerCase()} while maintaining a {answers.diet.toLowerCase()} diet, this is the most effective, science-backed approach for your body.
                       </p>
                       
@@ -209,7 +209,7 @@ export default function Quiz() {
                         </a>
                         <button 
                           onClick={resetQuiz}
-                          className="px-8 py-4 bg-stone-100 text-stone-600 font-bold rounded-xl hover:bg-stone-200 transition-colors flex items-center justify-center gap-2"
+                          className="px-8 py-4 bg-slate-100 text-slate-600 font-bold rounded-xl hover:bg-slate-200 transition-colors flex items-center justify-center gap-2"
                         >
                           <RotateCcw size={18} />
                           Retake Quiz

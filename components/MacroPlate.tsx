@@ -29,7 +29,7 @@ export default function MacroPlate() {
   const fatsOffset = proteinOffset - proteinStroke;
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden border-t border-stone-100">
+    <section className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-50/50 via-white to-white -z-10"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +48,7 @@ export default function MacroPlate() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mb-4"
+            className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-4"
           >
             The Perfect Plate
           </motion.h2>
@@ -57,7 +57,7 @@ export default function MacroPlate() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-stone-600 max-w-2xl mx-auto"
+            className="text-lg text-slate-600 max-w-2xl mx-auto"
           >
             Nutrition isn't one-size-fits-all. Select your goal below to see how your macro split should look on the plate.
           </motion.p>
@@ -72,7 +72,7 @@ export default function MacroPlate() {
             viewport={{ once: true }}
             className="order-2 lg:order-1"
           >
-            <h3 className="text-2xl font-bold text-stone-900 mb-6">Select Your Goal</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Select Your Goal</h3>
             <div className="flex flex-col gap-3 mb-8">
               {(Object.keys(macroData) as DietType[]).map((diet) => (
                 <button
@@ -81,7 +81,7 @@ export default function MacroPlate() {
                   className={`w-full text-left px-6 py-4 rounded-xl font-semibold transition-all border-2 flex justify-between items-center ${
                     activeDiet === diet 
                       ? "border-brand-500 bg-brand-50 text-brand-700 shadow-md transform scale-[1.02]" 
-                      : "border-stone-100 bg-white text-stone-600 hover:border-brand-200 hover:bg-stone-50"
+                      : "border-slate-100 bg-white text-slate-600 hover:border-brand-200 hover:bg-slate-50"
                   }`}
                 >
                   {macroData[diet].label}
@@ -92,9 +92,9 @@ export default function MacroPlate() {
               ))}
             </div>
 
-            <div className="bg-stone-50 p-6 rounded-2xl border border-stone-100 flex gap-4 items-start">
-              <Info className="w-6 h-6 text-stone-400 flex-shrink-0 mt-0.5" />
-              <p className="text-stone-600 text-sm leading-relaxed">
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start">
+              <Info className="w-6 h-6 text-slate-400 flex-shrink-0 mt-0.5" />
+              <p className="text-slate-600 text-sm leading-relaxed">
                 <strong>Why Macros Matter:</strong> <br/>
                 {data.desc}
               </p>
@@ -111,8 +111,8 @@ export default function MacroPlate() {
             <div className="relative w-80 h-80 md:w-96 md:h-96">
               
               {/* The "Plate" background */}
-              <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-stone-100 z-0"></div>
-              <div className="absolute inset-4 rounded-full bg-stone-50 shadow-inner z-0"></div>
+              <div className="absolute inset-0 rounded-full bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 z-0"></div>
+              <div className="absolute inset-4 rounded-full bg-slate-50 shadow-inner z-0"></div>
 
               {/* Dynamic SVG Donut Chart for Macros */}
               <svg className="w-full h-full -rotate-90 relative z-10 drop-shadow-xl" viewBox="0 0 300 300">
@@ -157,13 +157,13 @@ export default function MacroPlate() {
               </svg>
 
               {/* Center Readout */}
-              <div className="absolute top-1/2 left-1/2 -transtone-x-1/2 -transtone-y-1/2 text-center z-20 w-32 bg-white rounded-full h-32 flex flex-col items-center justify-center shadow-md border border-stone-50">
-                <p className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">Target</p>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-20 w-32 bg-white rounded-full h-32 flex flex-col items-center justify-center shadow-md border border-slate-50">
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Target</p>
                 <motion.p 
                   key={activeDiet}
                   initial={{ opacity: 0, y: 5 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="font-serif font-bold text-lg text-stone-900 leading-tight"
+                  className="font-serif font-bold text-lg text-slate-900 leading-tight"
                 >
                   {data.label}
                 </motion.p>
@@ -175,18 +175,18 @@ export default function MacroPlate() {
             <div className="mt-12 flex flex-wrap justify-center gap-6 w-full max-w-sm">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 rounded-full bg-amber-400"></div>
-                <span className="text-stone-600 font-semibold w-16">Carbs</span>
-                <span className="font-bold text-stone-900">{data.carbs}%</span>
+                <span className="text-slate-600 font-semibold w-16">Carbs</span>
+                <span className="font-bold text-slate-900">{data.carbs}%</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 rounded-full bg-emerald-500"></div>
-                <span className="text-stone-600 font-semibold w-16">Protein</span>
-                <span className="font-bold text-stone-900">{data.protein}%</span>
+                <span className="text-slate-600 font-semibold w-16">Protein</span>
+                <span className="font-bold text-slate-900">{data.protein}%</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 rounded-full bg-blue-500"></div>
-                <span className="text-stone-600 font-semibold w-16">Fats</span>
-                <span className="font-bold text-stone-900">{data.fats}%</span>
+                <span className="text-slate-600 font-semibold w-16">Fats</span>
+                <span className="font-bold text-slate-900">{data.fats}%</span>
               </div>
             </div>
 

@@ -33,16 +33,16 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-serif font-bold text-stone-900 mb-6">
+            <h2 className="text-4xl font-serif font-bold text-slate-900 mb-6">
               {siteData.about.title}
             </h2>
-            <p className="text-lg text-stone-600 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               {siteData.about.content}
             </p>
 
             <ul className="space-y-4 mb-10">
               {["Personalized Nutrition Guidance", "No Starvation or Fad Diets", "Sustainable Lifestyle Changes", "24/7 WhatsApp Support"].map((item, idx) => (
-                <li key={idx} className="flex items-center text-stone-700 font-medium">
+                <li key={idx} className="flex items-center text-slate-700 font-medium">
                   <CheckCircle2 className="w-6 h-6 text-brand-500 mr-3 flex-shrink-0" />
                   {item}
                 </li>
@@ -51,7 +51,7 @@ export default function About() {
 
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-stone-900 rounded-full hover:bg-stone-800 transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-slate-900 rounded-full hover:bg-slate-800 transition-all shadow-md hover:shadow-lg"
             >
               Get Started Today
             </a>

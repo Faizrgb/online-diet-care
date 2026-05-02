@@ -28,7 +28,7 @@ export default function Hero() {
       {/* Dynamic Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
         <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[60%] rounded-full bg-brand-100/50 blur-[100px] mix-blend-multiply opacity-70"></div>
-        <div className="absolute top-[20%] -left-[10%] w-[40%] h-[50%] rounded-full bg-orange-50/50 blur-[100px] mix-blend-multiply opacity-70"></div>
+        <div className="absolute top-[20%] -left-[10%] w-[40%] h-[50%] rounded-full bg-blue-50/50 blur-[100px] mix-blend-multiply opacity-70"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,29 +46,29 @@ export default function Hero() {
               Over 500+ Lives Transformed
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-stone-900 leading-[1.1] mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-slate-900 leading-[1.1] mb-6">
               {siteData.hero.title}
             </h1>
             
-            <p className="text-xl md:text-2xl text-stone-600 mb-6 font-medium">
+            <p className="text-xl md:text-2xl text-slate-600 mb-6 font-medium">
               {siteData.hero.subtitle}
             </p>
             
-            <p className="text-lg text-stone-500 mb-10 leading-relaxed max-w-lg">
+            <p className="text-lg text-slate-500 mb-10 leading-relaxed max-w-lg">
               {siteData.hero.description}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <a
                 href="#contact"
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 text-white font-semibold text-lg hover:bg-brand-600 transition-all shadow-lg hover:shadow-xl hover:shadow-brand-500/30 transform hover:-transtone-y-1 flex items-center justify-center gap-2 group"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 text-white font-semibold text-lg hover:bg-brand-600 transition-all shadow-lg hover:shadow-xl hover:shadow-brand-500/30 transform hover:-translate-y-1 flex items-center justify-center gap-2 group"
               >
                 {siteData.hero.ctaText}
-                <ArrowRight size={20} className="group-hover:transtone-x-1 transition-transform" />
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#plans"
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-stone-700 font-semibold text-lg border-2 border-stone-100 hover:border-brand-200 hover:bg-stone-50 transition-all flex items-center justify-center"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-slate-700 font-semibold text-lg border-2 border-slate-100 hover:border-brand-200 hover:bg-slate-50 transition-all flex items-center justify-center"
               >
                 Explore Plans
               </a>
@@ -83,7 +83,7 @@ export default function Hero() {
             className="relative block mt-12 lg:mt-0 h-[450px] lg:h-[600px] w-full"
           >
             {/* Main Center Piece: Shuffling Image Carousel */}
-            <div className="absolute top-1/2 left-1/2 -transtone-x-1/2 -transtone-y-1/2 w-64 lg:w-80 h-[350px] lg:h-[450px] rounded-3xl shadow-2xl rotate-3 overflow-hidden border-4 border-white bg-stone-100">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 lg:w-80 h-[350px] lg:h-[450px] rounded-3xl shadow-2xl rotate-3 overflow-hidden border-4 border-white bg-slate-100">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentImageIndex}
@@ -108,9 +108,9 @@ export default function Hero() {
               
               <div className="absolute bottom-8 left-0 w-full px-6">
                 <div className="bg-white/90 backdrop-blur rounded-xl p-4 shadow-lg border border-white/50">
-                  <p className="text-sm font-bold text-stone-800">Your Goal</p>
-                  <p className="text-xs text-stone-500 mb-2">Customized Plan Active</p>
-                  <div className="w-full bg-stone-100 h-2 rounded-full overflow-hidden">
+                  <p className="text-sm font-bold text-slate-800">Your Goal</p>
+                  <p className="text-xs text-slate-500 mb-2">Customized Plan Active</p>
+                  <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                     <div className="bg-brand-500 h-full w-[75%] rounded-full"></div>
                   </div>
                 </div>
@@ -127,8 +127,8 @@ export default function Hero() {
                 <Apple className="text-orange-500 w-6 h-6" />
               </div>
               <div>
-                <p className="text-xs text-stone-500 font-medium">Daily Target</p>
-                <p className="text-lg font-bold text-stone-900">1,850 kcal</p>
+                <p className="text-xs text-slate-500 font-medium">Daily Target</p>
+                <p className="text-lg font-bold text-slate-900">1,850 kcal</p>
               </div>
             </motion.div>
 
@@ -144,8 +144,8 @@ export default function Hero() {
                 </div>
                 <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">+12%</span>
               </div>
-              <p className="text-sm text-stone-600 font-medium mb-1">Health Score</p>
-              <p className="text-2xl font-bold text-stone-900">Excellent</p>
+              <p className="text-sm text-slate-600 font-medium mb-1">Health Score</p>
+              <p className="text-2xl font-bold text-slate-900">Excellent</p>
             </motion.div>
 
             {/* Floating Card 3: Activity */}
@@ -155,7 +155,7 @@ export default function Hero() {
               className="absolute top-1/2 left-0 lg:-left-12 bg-white/80 backdrop-blur-xl p-3 lg:p-4 rounded-2xl shadow-xl border border-white/50 flex items-center gap-2 lg:gap-3 scale-90 lg:scale-100 origin-left z-10"
             >
               <Activity className="text-blue-500 w-6 h-6" />
-              <p className="text-sm font-bold text-stone-800">Metabolism Boost</p>
+              <p className="text-sm font-bold text-slate-800">Metabolism Boost</p>
             </motion.div>
 
           </motion.div>

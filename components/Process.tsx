@@ -12,7 +12,7 @@ export default function Process() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-serif font-bold text-slate-900 mb-4"
+            className="text-4xl font-serif font-bold text-stone-900 mb-4"
           >
             How It Works
           </motion.h2>
@@ -21,7 +21,7 @@ export default function Process() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-slate-600"
+            className="text-lg text-stone-600"
           >
             A simple, straightforward process to achieve your health and fitness goals.
           </motion.p>
@@ -43,8 +43,8 @@ export default function Process() {
               <div className="w-20 h-20 mx-auto bg-white border-4 border-brand-100 rounded-full flex items-center justify-center mb-6 shadow-sm transition-all duration-300 hover:border-brand-500 hover:shadow-md">
                 <span className="text-2xl font-bold text-brand-600 font-serif">{step.step}</span>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">{titleCase(step.title)}</h3>
-              <p className="text-slate-600 text-sm">{step.desc}</p>
+              <h3 className="text-xl font-bold text-stone-900 mb-2">{titleCase(step.title)}</h3>
+              <p className="text-stone-600 text-sm">{step.desc}</p>
             </motion.div>
           ))}
         </div>

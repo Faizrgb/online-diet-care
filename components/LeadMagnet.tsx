@@ -74,12 +74,12 @@ export default function LeadMagnet() {
           exit={{ opacity: 0, y: 50, scale: 0.9, transition: { duration: 0.2 } }}
           className="fixed bottom-6 right-6 sm:bottom-10 sm:right-10 z-50 w-[calc(100vw-3rem)] sm:w-[400px]"
         >
-          <div className="bg-white rounded-2xl shadow-2xl shadow-brand-500/20 border border-slate-100 overflow-hidden relative">
+          <div className="bg-white rounded-2xl shadow-2xl shadow-brand-500/20 border border-stone-100 overflow-hidden relative">
             
             {/* Close Button */}
             <button 
               onClick={dismiss}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors z-10"
+              className="absolute top-4 right-4 text-stone-400 hover:text-stone-600 transition-colors z-10"
             >
               <X size={20} />
             </button>
@@ -108,8 +108,8 @@ export default function LeadMagnet() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                   </div>
-                  <h4 className="font-bold text-slate-900">It's on the way!</h4>
-                  <p className="text-sm text-slate-500 mt-1">Check your inbox for the download link.</p>
+                  <h4 className="font-bold text-stone-900">It's on the way!</h4>
+                  <p className="text-sm text-stone-500 mt-1">Check your inbox for the download link.</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -121,13 +121,13 @@ export default function LeadMagnet() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email address"
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none text-sm text-slate-700"
+                      className="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none text-sm text-stone-700"
                     />
                   </div>
                   <button 
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full py-3 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-800 transition-all flex items-center justify-center gap-2 text-sm disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full py-3 bg-stone-900 text-white font-bold rounded-xl hover:bg-stone-800 transition-all flex items-center justify-center gap-2 text-sm disabled:opacity-70 disabled:cursor-not-allowed"
                   >
                     {status === "submitting" ? (
                       <span className="animate-pulse">Sending...</span>
@@ -141,7 +141,7 @@ export default function LeadMagnet() {
                   {status === "error" && (
                     <p className="text-red-500 text-xs text-center mt-2">Failed to send. Please try again.</p>
                   )}
-                  <p className="text-[10px] text-slate-400 text-center">We respect your privacy. No spam.</p>
+                  <p className="text-[10px] text-stone-400 text-center">We respect your privacy. No spam.</p>
                 </form>
               )}
             </div>

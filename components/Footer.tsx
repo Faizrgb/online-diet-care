@@ -3,7 +3,7 @@ import { Camera, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-slate-900 text-slate-300 py-16">
+    <footer id="contact" className="bg-stone-900 text-stone-300 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
@@ -11,11 +11,11 @@ export default function Footer() {
             <h3 className="text-2xl font-serif font-bold text-white mb-4">
               {siteData.global.brandName}
             </h3>
-            <p className="mb-6 max-w-sm text-slate-400">
+            <p className="mb-6 max-w-sm text-stone-400">
               Personalized, sustainable diet plans designed to help you reach your health goals without giving up the foods you love.
             </p>
             <div className="flex space-x-4">
-              <a href={siteData.global.instagramUrl} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
+              <a href={siteData.global.instagramUrl} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors">
                 <Camera size={20} />
               </a>
             </div>
@@ -67,19 +67,19 @@ export default function Footer() {
 
         </div>
         
-        <div className="pt-8 border-t border-slate-800 text-center text-slate-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-stone-800 text-center text-stone-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
             <p>&copy; {new Date().getFullYear()} {siteData.global.brandName}. All rights reserved.</p>
             <a href="/privacy-policy" className="hover:text-brand-400 transition-colors">Privacy Policy</a>
           </div>
           
           <div className="flex items-center gap-3 mt-4 md:mt-0 opacity-80 hover:opacity-100 transition-opacity">
-            <span className="text-[10px] font-semibold tracking-widest uppercase text-slate-500">Engineered By</span>
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-stone-500">Engineered By</span>
             <a 
               href="https://codeburp.vercel.app" 
               target="_blank" 
               rel="noreferrer"
-              className="flex items-center hover:-translate-y-0.5 transition-transform"
+              className="flex items-center hover:-transtone-y-0.5 transition-transform"
             >
               <img 
                 src="/codeburp-logo-actual.png" 

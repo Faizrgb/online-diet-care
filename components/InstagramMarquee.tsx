@@ -57,10 +57,10 @@ export default function InstagramMarquee() {
   const loopPosts = [...mockPosts, ...mockPosts, ...mockPosts];
 
   return (
-    <section className="py-24 bg-slate-900 relative overflow-hidden">
+    <section className="py-24 bg-stone-900 relative overflow-hidden">
       
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16 flex flex-col md:flex-row justify-between items-end border-b border-slate-800 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16 flex flex-col md:flex-row justify-between items-end border-b border-stone-800 pb-8">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 text-pink-400 font-semibold text-sm mb-6">
             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -73,7 +73,7 @@ export default function InstagramMarquee() {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
             Daily Tips & Inspiration
           </h2>
-          <p className="text-lg text-slate-400">
+          <p className="text-lg text-stone-400">
             Join the community. Get free daily diet strategies, recipes, and see real client transformations.
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function InstagramMarquee() {
           href="https://www.instagram.com/onlinedietcare/" 
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 md:mt-0 px-8 py-3 rounded-xl bg-white text-slate-900 font-bold hover:bg-slate-100 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:-translate-y-1"
+          className="mt-6 md:mt-0 px-8 py-3 rounded-xl bg-white text-stone-900 font-bold hover:bg-stone-100 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:-transtone-y-1"
         >
           @onlinedietcare
         </a>
@@ -92,8 +92,8 @@ export default function InstagramMarquee() {
       <div className="relative w-full flex overflow-hidden group">
         
         {/* Left/Right Fading Gradients for smooth entrance/exit */}
-        <div className="absolute top-0 left-0 w-16 md:w-32 h-full bg-gradient-to-r from-slate-900 to-transparent z-20 pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-16 md:w-32 h-full bg-gradient-to-l from-slate-900 to-transparent z-20 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-16 md:w-32 h-full bg-gradient-to-r from-stone-900 to-transparent z-20 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-16 md:w-32 h-full bg-gradient-to-l from-stone-900 to-transparent z-20 pointer-events-none"></div>
 
         {/* Scrolling Track */}
         <motion.div 
@@ -112,7 +112,7 @@ export default function InstagramMarquee() {
               href={post.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-[280px] h-[350px] rounded-3xl overflow-hidden cursor-pointer group/card shrink-0 transform transition-transform duration-500 hover:scale-[1.03] hover:z-30 shadow-2xl block border border-slate-700/50"
+              className="relative w-[280px] h-[350px] rounded-3xl overflow-hidden cursor-pointer group/card shrink-0 transform transition-transform duration-500 hover:scale-[1.03] hover:z-30 shadow-2xl block border border-stone-700/50"
             >
               {/* Image with Blur */}
               <Image 
@@ -153,12 +153,12 @@ export default function InstagramMarquee() {
               <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 z-10 flex flex-col justify-center items-center p-6">
                 
                 {/* Custom Play Icon on Hover */}
-                <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/50 text-white mb-6 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-300">
+                <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/50 text-white mb-6 transtone-y-4 opacity-0 group-hover/card:transtone-y-0 group-hover/card:opacity-100 transition-all duration-300">
                   <Play size={24} className="fill-white ml-1" />
                 </div>
 
                 {/* Caption Snippet */}
-                <p className="text-white/95 text-sm text-center font-medium translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-300 delay-75 line-clamp-4 leading-relaxed">
+                <p className="text-white/95 text-sm text-center font-medium transtone-y-4 opacity-0 group-hover/card:transtone-y-0 group-hover/card:opacity-100 transition-all duration-300 delay-75 line-clamp-4 leading-relaxed">
                   {post.text}
                 </p>
                 

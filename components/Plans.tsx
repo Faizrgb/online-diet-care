@@ -13,7 +13,7 @@ export default function Plans() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-serif font-bold text-slate-900 mb-4"
+            className="text-4xl font-serif font-bold text-stone-900 mb-4"
           >
             Specialized Diet Plans
           </motion.h2>
@@ -22,7 +22,7 @@ export default function Plans() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-slate-600"
+            className="text-lg text-stone-600"
           >
             Explore our expert-designed health programs tailored to meet your specific goals and lifestyle needs.
           </motion.p>
@@ -46,8 +46,8 @@ export default function Plans() {
                 transition={{ delay: index * 0.1 }}
                 className={`group p-8 rounded-3xl border transition-all duration-300 relative overflow-hidden ${
                   isHighlighted 
-                    ? "bg-slate-900 border-slate-800 text-white shadow-2xl shadow-brand-500/10 hover:shadow-brand-500/20 hover:-translate-y-1" 
-                    : "bg-slate-50 border-slate-100 hover:border-brand-200 hover:bg-white hover:shadow-xl"
+                    ? "bg-stone-900 border-stone-800 text-white shadow-2xl shadow-brand-500/10 hover:shadow-brand-500/20 hover:-transtone-y-1" 
+                    : "bg-stone-50 border-stone-100 hover:border-brand-200 hover:bg-white hover:shadow-xl"
                 }`}
               >
                 {price && (
@@ -58,17 +58,17 @@ export default function Plans() {
                 
                 <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 ${
                   isHighlighted 
-                    ? "bg-slate-800 group-hover:bg-brand-500" 
+                    ? "bg-stone-800 group-hover:bg-brand-500" 
                     : "bg-brand-100 group-hover:bg-brand-500"
                 }`}>
                   <IconComponent className={`w-7 h-7 transition-colors ${
                     isHighlighted ? "text-brand-400 group-hover:text-white" : "text-brand-600 group-hover:text-white"
                   }`} />
                 </div>
-                <h3 className={`text-xl font-bold mb-3 font-serif ${isHighlighted ? "text-white" : "text-slate-900"}`}>
+                <h3 className={`text-xl font-bold mb-3 font-serif ${isHighlighted ? "text-white" : "text-stone-900"}`}>
                   {plan.title}
                 </h3>
-                <p className={`leading-relaxed text-sm ${isHighlighted ? "text-slate-400" : "text-slate-600"}`}>
+                <p className={`leading-relaxed text-sm ${isHighlighted ? "text-stone-400" : "text-stone-600"}`}>
                   {plan.description}
                 </p>
                 

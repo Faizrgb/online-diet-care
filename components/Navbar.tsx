@@ -32,14 +32,14 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-600 hover:text-brand-600 font-medium transition-colors"
+                className="text-stone-600 hover:text-brand-600 font-medium transition-colors"
               >
                 {link.name}
               </a>
             ))}
             <a
               href="#contact"
-              className="px-5 py-2.5 rounded-full bg-brand-500 text-white font-medium hover:bg-brand-600 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+              className="px-5 py-2.5 rounded-full bg-brand-500 text-white font-medium hover:bg-brand-600 transition-all shadow-md hover:shadow-lg transform hover:-transtone-y-0.5"
             >
               Book Now
             </a>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 hover:text-brand-600 focus:outline-none"
+              className="text-stone-600 hover:text-brand-600 focus:outline-none"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -70,7 +70,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50"
+                  className="block px-3 py-3 rounded-md text-base font-medium text-stone-700 hover:text-brand-600 hover:bg-brand-50"
                 >
                   {link.name}
                 </a>

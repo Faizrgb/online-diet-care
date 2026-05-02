@@ -50,7 +50,7 @@ export default function Transformation() {
   }, [isDragging]);
 
   return (
-    <section className="py-24 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
+    <section className="py-24 bg-stone-50 border-y border-stone-100 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -64,7 +64,7 @@ export default function Transformation() {
           >
             <div 
               ref={containerRef}
-              className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden cursor-ew-resize select-none bg-slate-200 shadow-2xl border border-slate-200"
+              className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden cursor-ew-resize select-none bg-stone-200 shadow-2xl border border-stone-200"
               onMouseDown={(e) => {
                 setIsDragging(true);
                 handleMove(e.clientX);
@@ -106,7 +106,7 @@ export default function Transformation() {
                 className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize shadow-[0_0_10px_rgba(255,255,255,0.5)] z-20 flex items-center justify-center"
                 style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
               >
-                <div className="w-10 h-10 bg-white rounded-full shadow-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:scale-110 transition-transform active:scale-95">
+                <div className="w-10 h-10 bg-white rounded-full shadow-lg border border-stone-200 flex items-center justify-center text-stone-400 hover:scale-110 transition-transform active:scale-95">
                   <GripVertical size={20} />
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function Transformation() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-4"
+              className="text-4xl md:text-5xl font-serif font-bold text-stone-900 mb-4"
             >
               Client Transformations
             </motion.h2>
@@ -138,7 +138,7 @@ export default function Transformation() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg text-slate-600 mb-8"
+              className="text-lg text-stone-600 mb-8"
             >
               Drag the slider to see what real dedication and a perfectly customized diet plan can achieve. Every body is different, but with the right guidance, incredible changes are possible.
             </motion.p>
